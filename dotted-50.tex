@@ -1,0 +1,26 @@
+\documentclass{minimal}
+\usepackage[paperwidth=24cm,paperheight=17cm,margin=0ex]{geometry}
+\usepackage{pgffor,tikz}
+\usetikzlibrary{decorations.pathmorphing}
+\colorlet{maincolor}{brown}
+\begin{document}
+\foreach \page in {1,...,50}
+{
+  \begin{tikzpicture}[remember picture,overlay,x=.5cm,y=1cm]
+    \shade [top color=maincolor!05,
+    bottom color=maincolor!10]
+    (current page.north east) rectangle (current page.south west);
+
+    \begin{scope}[shift={([yshift=5mm,xshift=0mm]current page.south west)}]
+      \foreach \x in {0,...,50}
+      \foreach \y in {0,...,20}
+      \fill[maincolor!25] (\x,\y) circle (1pt);
+    \end{scope}
+
+    \draw[maincolor] ([yshift=-1em,xshift=-1em]current page.north east) node {p\thepage};
+  \end{tikzpicture}
+  \clearpage
+}
+% \hbox{}
+
+\end{document}
