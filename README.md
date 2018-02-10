@@ -5,9 +5,10 @@ format works on an iPad Pro (24x17cm).
 
 The following styles are provided:
 
-- blank paper
-- grid paper
-- dotted paper
+- blank paper ([one page](https://github.com/bjoseru/notability-ipad-pro-slide-templates/raw/master/blank-one.pdf), [50 pages](https://github.com/bjoseru/notability-ipad-pro-slide-templates/raw/master/blank-50.pdf))
+- grid paper ([one page](https://github.com/bjoseru/notability-ipad-pro-slide-templates/raw/master/grid-one.pdf), [50 pages](https://github.com/bjoseru/notability-ipad-pro-slide-templates/raw/master/grid-50.pdf))
+- dotted paper ([one page](https://github.com/bjoseru/notability-ipad-pro-slide-templates/raw/master/dotted-one.pdf), [50 pages](https://github.com/bjoseru/notability-ipad-pro-slide-templates/raw/master/dotted-50.pdf))
+
 
 All three variants come in a one-page and a multi-page template (that
 is, 50 pages).
