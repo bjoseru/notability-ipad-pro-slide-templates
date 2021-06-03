@@ -1,0 +1,13 @@
+\documentclass{minimal}
+\usepackage[paperwidth=24cm,paperheight=13.5cm]{geometry}
+\usepackage{pgffor,tikz}
+\usetikzlibrary{decorations.pathmorphing}
+\colorlet{maincolor}{brown}
+\begin{document}
+  \begin{tikzpicture}[remember picture,overlay,x=.5cm,y=1cm]
+    \shade [top color=maincolor!05,
+    bottom color=maincolor!10]
+    (current page.north east) rectangle (current page.south west);
+  \end{tikzpicture}
+  \hbox{}
+\end{document}

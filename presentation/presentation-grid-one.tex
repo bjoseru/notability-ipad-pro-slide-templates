@@ -1,0 +1,21 @@
+\documentclass{minimal}
+\usepackage[paperwidth=24cm,paperheight=13.5cm,margin=0ex]{geometry}
+\usepackage{pgffor,tikz}
+\usetikzlibrary{decorations.pathmorphing}
+\colorlet{maincolor}{brown}
+\begin{document}
+% \foreach \x in {1,...,50}
+% {\hbox{}\clearpage}
+
+
+\begin{tikzpicture}[remember picture,overlay]
+  \shade [top color=maincolor!05,
+  bottom color=maincolor!10]
+  (current page.north east) rectangle (current page.south west);
+  \draw[maincolor!15]
+  (current page.north east) grid[xstep=.5cm,ystep=1cm] (current page.south west);
+  
+\end{tikzpicture}
+% \hbox{}
+
+\end{document}
